@@ -18,6 +18,14 @@
 
 namespace Surfnet\SamlBundle\Entity;
 
+/**
+ * Provides a common interface for determining if a service provider is
+ * supported and retrieving the ServiceProvider configuration object associated
+ * with the SAML entity ID.
+ *
+ * The implementation can be as simple as a hardcoded list, or interrogate a
+ * number of databases for the configuration.
+ */
 interface ServiceProviderRepository
 {
     /**
