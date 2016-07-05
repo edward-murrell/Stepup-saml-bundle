@@ -29,8 +29,13 @@ namespace Surfnet\SamlBundle\Entity;
 interface ServiceProviderRepository
 {
     /**
+     * Retrieve the ServiceProvider object configured associated with $entityId.
+     *
      * @param string $entityId
-     * @return ServiceProvider
+     *   SAML entity ID to search for.
+     *
+     * @return ServiceProvider|null
+     *   Configured ServiceProvider object. Returns null if not found.
      */
     public function getServiceProvider($entityId);
 
