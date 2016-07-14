@@ -31,6 +31,9 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use XMLSecurityKey;
 
 /**
+ * This class is responsible for decoding requests SAML 2.0 AuthnRequest sent
+ * via HTTP Redirect binding.
+ *
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects) - not much we can do about it
  * @see https://www.pivotaltracker.com/story/show/83028366
  */
