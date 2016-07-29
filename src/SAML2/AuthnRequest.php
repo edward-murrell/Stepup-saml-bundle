@@ -329,6 +329,10 @@ class AuthnRequest
         $queryParams[self::PARAMETER_SIGNATURE_ALGORITHM] = $securityKey->type;
 
         $toSign = http_build_query($queryParams);
+
+        if ($securityKey === null) {
+          return $toSign;
+        }
         $signature = $securityKey->signData($toSign);
 
         $signedQuery = $toSign . '&Signature=' . urlencode(base64_encode($signature));
