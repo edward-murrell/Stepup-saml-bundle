@@ -37,6 +37,8 @@ use XMLSecurityKey;
 class AuthnRequestFactory
 {
     /**
+     * Creates an AuthN Request based on ..?
+     *
      * @param Request $httpRequest
      * @return AuthnRequest
      */

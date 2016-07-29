@@ -199,6 +199,15 @@ class RedirectBinding
         return $this->processSignedRequest($request);
     }
 
+  /**
+   * Create a Symfony compatible RedirectionResponse from an AuthnRequest
+   * message.
+   *
+   * @TODO It's unclear if this is supposed to be used by IDP or SP.
+   *
+   * @param AuthnRequest $request
+   * @return RedirectResponse
+   */
     public function createRedirectResponseFor(AuthnRequest $request)
     {
         return new RedirectResponse($request->getDestination() . '?' . $request->buildRequestQuery());

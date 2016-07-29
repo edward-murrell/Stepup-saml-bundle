@@ -336,3 +336,5 @@ class AuthnRequest
         return $signedQuery;
     }
 }
+// I think we need to provider either the cert/key for signing to this SP
+// and/or we need configure implement the code handle unsigned responses.

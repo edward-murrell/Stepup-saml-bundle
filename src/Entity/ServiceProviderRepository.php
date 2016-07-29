@@ -23,6 +23,10 @@ namespace Surfnet\SamlBundle\Entity;
  * supported and retrieving the ServiceProvider configuration object associated
  * with the SAML entity ID.
  *
+ * TODO : Explain what a SAML entity ID is here.
+ *
+ * TODO : Add example of ServiceProviderRepository implmentation.
+ *
  * The implementation can be as simple as a hardcoded list, or interrogate a
  * number of databases for the configuration.
  */
